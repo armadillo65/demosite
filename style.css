@@ -1,0 +1,102 @@
+.navbar {
+  /* display: none; */
+}
+.carousel-item {
+  height:100vh;
+}
+
+.carousel-item img{
+  object-fit: cover;
+}
+
+.carousel {
+  margin-bottom: 30px;
+}
+
+li {
+  list-style: none;
+}
+
+main img{
+  max-height: 80vh;
+  object-fit: cover;
+}
+
+.mail-icon {
+  transform: scale(2);
+}
+
+.active {
+  border-bottom: 2px solid var(--dark);
+
+}
+/* bath cara  */
+#carouselExampleFade img {
+  width:500px;
+  height: 400px;
+  object-fit: cover;
+}
+/* modal */
+.containerModal{
+  display: none;
+}
+
+#galleryPics img {
+  height: 300px;
+}
+
+.myOverlay {
+  position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.myModal img{
+  height: 80vh;
+}
+
+.myOverlayClose:hover {
+  cursor: pointer;
+}
+
+.myContent {
+  position: relative;
+  padding: 2em;
+  margin-top: 80px;
+  background-color: #000;
+  display: none;
+}
+
+#done {
+  position: absolute;
+  top: -1em;
+  right: -1em;
+  width: 2em;
+  height: 2em;
+  background-color: red;
+  color: #fff;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#done::after {
+  content: "X";
+  color: #fff;
+  font-weight: bold;
+}
+
+footer {
+  background-color: rgb(231, 0, 3);
+  color: rgb(244, 199, 46);
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
