@@ -1,12 +1,21 @@
+
+
 .navbar {
-  /* display: none; */
+  /* background-color: rgba(0, 0, 0, 0.5); */
 }
+
+@media (min-width: 768px){
+  .navbar {
+    /* background-color: dodgerblue; */
+  }
+}
+
 .carousel-item {
   height:100vh;
 }
 
 .carousel-item img{
-  object-fit: cover;
+  /* object-fit: cover; */
 }
 
 .carousel {
@@ -27,9 +36,10 @@ main img{
 }
 
 .active {
-  border-bottom: 2px solid var(--dark);
-
+  /* border-bottom: 2px solid var(--dark); */
 }
+
+
 /* bath cara  */
 #carouselExampleFade img {
   width:500px;
@@ -43,6 +53,7 @@ main img{
 
 #galleryPics img {
   height: 300px;
+
 }
 
 .myOverlay {
@@ -57,7 +68,7 @@ main img{
 }
 
 .myModal img{
-  height: 80vh;
+  height: 70vh;
 }
 
 .myOverlayClose:hover {
@@ -70,6 +81,10 @@ main img{
   margin-top: 80px;
   background-color: #000;
   display: none;
+}
+
+.myContent div {
+  width: 70vh;
 }
 
 #done {
@@ -91,6 +106,15 @@ main img{
   color: #fff;
   font-weight: bold;
 }
+
+#imageLocation p {
+  /* box-sizing: border-box; */
+  display: inline-block;
+  margin-left: 5px;
+  margin-top: 10px;
+}
+
+
 
 footer {
   background-color: rgb(231, 0, 3);

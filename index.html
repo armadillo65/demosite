@@ -21,10 +21,10 @@
         <div class="navCara carousel-inner">
 
           <div class="carousel-item active">
-            <img src="const_pic_1.jpg" class="d-block pic-1" alt="...">
-            <div class="carousel-caption d-none d-md-block">
+            <img src="const_pic_1.jpg" class="caraPics d-block w-100" alt="...">
+            <div class="carousel-caption  d-block">
               <img src="royal-logo.png" alt="">
-              <h1 class="display-4 text-danger">Royal Island Handyman LLC.</h1>
+              <h1 class="display-4 text-danger">Royal Handyman and Maintenance, LLC.</h1>
               <p class="lead text-black-50">Big Island Hawaii's top handyman service!</p>
               <hr class="my-4">
               <p class="text-black-50">Commercial and Residential repairs and maintenance.</p>
@@ -32,10 +32,10 @@
           </div>
 
           <div class="carousel-item">
-            <img src="const_pic_2-2.png" class="d-block" alt="...">
+            <img src="const_pic_2-2.png" class="caraPics d-block w-100" alt="...">
             <div class="carousel-caption d-none d-md-block">
               <img src="royal-logo.png" alt="">
-              <h1 class="display-4">Royal Island Handyman LLC.</h1>
+              <h1 class="display-4 text-danger">Royal Handyman and Maintenance, LLC.</h1>
               <p class="lead">Big Island Hawaii's top handyman service!</p>
               <hr class="my-4">
               <p>Commercial and Residential repairs and maintenance.</p>
@@ -43,10 +43,10 @@
           </div>
 
           <div class="carousel-item">
-            <img src="const_pic_3.jpg" class="d-block alt="...">
+            <img src="const_pic_3.jpg" class=" caraPics d-block w-100" alt="...">
             <div class="carousel-caption d-none d-md-block">
               <img src="royal-logo.png" alt="">
-              <h1 class="display-4">Royal Island Handyman LLC.</h1>
+              <h1 class="display-4 text-danger">Royal Handyman and Maintenance, LLC.</h1>
               <p class="lead">Big Island Hawaii's top handyman service!</p>
               <hr class="my-4">
               <p>Commercial and Residential repairs and maintenance.</p>
@@ -65,41 +65,21 @@
       </div>
 
       <!-- Nav -->
-      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <nav class="navbar navbar-expand-md navbar-light bg-light">
         <a class="navbar-brand" href="#top">
-          <img src="royal-logo.png" width="40" alt="">Royal Island Handyman LLC.</a>
+          <img src="royal-logo.png" width="40" alt=""><span class="d-none d-md-inline-block ml-1">Royal Handyman and Maintenance, LLC.</span></a>
+
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
 
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav mr-auto">
-            <li class="nav-item ">
-              <a class="nav-link smooth" href="#services">Services<span class="sr-only">(current)</span></a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link smooth" href="#team">Our Team</a>
-            </li>
-            <li class="nav-item ">
-              <a class="nav-link smooth" href="#contact">Contact</a>
-            </li>
-            <li class="nav-item ">
-              <a class="nav-link smooth" href="#gallery">Gallery</a>
-            </li>
-            <!--
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Gallery
-              </a>
-              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <a data-toggle="modal" data-target="#exampleModalBath" class="dropdown-item" href="#">Bath</a>
-                <a data-toggle="modal" data-target="#exampleModalKitchen" class="dropdown-item" href="#">Kitchen</a>
-                <a class="dropdown-item" href="#">Exterior</a>
-              </div>
-            </li>
-            -->
+            <li class="nav-item"><a class="d-inline-block nav-link smooth" href="#services">Services<span class="sr-only">(current)</span></a></li>
+            <li class="nav-item"><a class="nav-link smooth" href="#team">Our Team</a></li>
+            <li class="nav-item"><a class="nav-link smooth" href="#contact">Contact</a></li>
+            <li class="nav-item"><a class="nav-link smooth" href="#gallery">Gallery</a></li>
           </ul>
-
         </div>
       </nav>
 
@@ -204,6 +184,7 @@
       <div id="team" class="row mt-4">
         <img class="col-8" src="carpenter.jpg" alt="">
         <h2 class="col-4">The Team</h2>
+
       </div>
     <!-- Contact -->
       <div id="contact" class="row mt-4">
@@ -216,7 +197,13 @@
 
       <!-- Gallery -->
       <h2 id="gallery" class="mt-4 mb-2">Gallery</h2>
+      <div id="imageLocation" class="row">
+        <!-- pics go here -->
+      </div>
       <div id="galleryPics" class="row mt-4 mb-4">
+        <!-- For Modal -->
+      </div>
+      <!--
         <div class="row">
           <img  class="col-4" src="bathroom_1.jpg" alt="">
           <img class="col-4" src="bathroom_2.jpg" alt="">
@@ -227,7 +214,7 @@
           <img class="col-4" src="kitchen_2.jpg" alt="">
           <img class="col-4" src="kitchen_3.jpg" alt="">
         </div>
-      </div>
+    -->
     </main>
 
     <div class="myModal">
@@ -235,6 +222,7 @@
         <span id="done" class="myOverlayClose"></span>
       </div>
     </div>
+
     <footer>
       <span>&copy;2019 Royal Island Handyman LLC.</span>
     </footer>
