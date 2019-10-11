@@ -1,26 +1,86 @@
-
-
-.navbar {
-  /* background-color: rgba(0, 0, 0, 0.5); */
+.tinted-image-1 {
+  background-image: url('const_pic_1.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
-@media (min-width: 768px){
-  .navbar {
-    /* background-color: dodgerblue; */
-  }
+.tinted-image-2{
+  background-image: url('const_pic_2.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.tinted-image-3 {
+  background-image: url('const_pic_3.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.service-list li::before,
+.team p::before {
+  content: url('hammer.svg');
+  padding: 5px;
+  position: absolute;
+  top: -5px;
+  left: -30px;
+  transform: rotateY(180deg);
+}
+
+.service-list li,
+.team p {
+  position: relative;
+}
+.service-list {
+  padding-top: 2em;
+  line-height: 2.5em;
+  color: #000;
+}
+
+ .myServices {
+   display: grid;
+   grid-template-columns: 1fr 1fr;
+ }
+
+.contact {
+  text-align: center;
+}
+#navbar {
+  transition: top 0.8s;
+}
+
+body {
+  font-family: 'Montserrat';
+}
+
+h1 {
+  font-family: 'Libre Baskerville', serif;
+  font-weight: 700;
+  text-shadow: 0px 0px 30px #fff;
+  color: #000;
+  font-size: 3.5rem;
+}
+
+
+.carousel-item p {
+  text-shadow: 0px 0px 10px #fff;
+  font-size: 1.5rem;
+  font-weight: 500;
+  /* background-color: #fff; */
+  color: #000;
+}
+
+.carousel-item h3 {
+  text-shadow: 0px 0px 15px #fff;
+  font-family: 'Montserrat';
+  font-weight: 500;
+  color: #000;
 }
 
 .carousel-item {
   height:100vh;
-}
-
-.carousel-item img{
-  /* object-fit: cover; */
-}
-
-.carousel {
-  margin-bottom: 30px;
-}
+ }
 
 li {
   list-style: none;
@@ -36,91 +96,87 @@ main img{
 }
 
 .active {
-  /* border-bottom: 2px solid var(--dark); */
+  border-bottom: 2px solid var(--dark);
 }
 
-
-/* bath cara  */
-#carouselExampleFade img {
-  width:500px;
-  height: 400px;
-  object-fit: cover;
+.navbar-toggler {
+  border: none;
 }
-/* modal */
-.containerModal{
-  display: none;
+.contact p {
+  color: #888;
 }
 
-#galleryPics img {
-  height: 300px;
-
+#mailAddr {
+  font-variant: small-caps;
+  font-size: 20px;
 }
-
-.myOverlay {
-  position: fixed;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  top: 0;
-  bottom: 0;
-  width: 100%;
-  background-color: rgba(0, 0, 0, 0.7);
-}
-
-.myModal img{
-  height: 70vh;
-}
-
-.myOverlayClose:hover {
-  cursor: pointer;
-}
-
-.myContent {
-  position: relative;
-  padding: 2em;
-  margin-top: 80px;
-  background-color: #000;
-  display: none;
-}
-
-.myContent div {
-  width: 70vh;
-}
-
-#done {
-  position: absolute;
-  top: -1em;
-  right: -1em;
-  width: 2em;
-  height: 2em;
-  background-color: red;
-  color: #fff;
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-#done::after {
-  content: "X";
-  color: #fff;
-  font-weight: bold;
-}
-
-#imageLocation p {
-  /* box-sizing: border-box; */
-  display: inline-block;
-  margin-left: 5px;
-  margin-top: 10px;
-}
-
-
 
 footer {
-  background-color: rgb(231, 0, 3);
-  color: rgb(244, 199, 46);
+  background-color: #000;
+  color: #999;
   height: 60px;
   display: flex;
+  text-align: center;
   align-items: center;
   justify-content: center;
 }
+
+/* -----MEDIA Qs-------- */
+/* Extra small devices (portrait phones, less than 576px) */
+/* No media query for `xs` since this is the default in Bootstrap */
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+
+
+ }
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+
+ }
+
+@media (max-width: 767.9px){
+ 
+ main img {
+   max-height: 65vh;
+ }
+
+ h2 {
+   font-size: 1.25rem;
+ }
+
+ #mailAddr {
+   font-size: 1rem;
+ }
+}
+@media (max-width: 575.9px){
+
+.carousel-item h1 {
+font-size: 2em;
+}
+.carousel-item h3 {
+ font-size: 1.25em;
+}
+.carousel-item p {
+ font-size: 0.8em;
+}
+
+.carousel-item img {
+ transform: scale(.5);
+}
+.carousel-caption img {
+ padding: 0;
+}
+
+.service-list {
+ line-height: 1.75em;
+}
+
+}
+/* -----  end media Q------ */
