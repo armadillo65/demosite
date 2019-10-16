@@ -8,7 +8,7 @@
 .tinted-image-2{
   background-image: url('const_pic_2.jpg');
     background-size: cover;
-    background-position: center;
+    background-position: right;
     background-repeat: no-repeat;
 }
 .tinted-image-3 {
@@ -62,29 +62,32 @@ li {
 h1 {
   font-family: 'Libre Baskerville', serif;
   font-weight: 700;
-  text-shadow: 0px 0px 30px #fff;
+  text-shadow: 0px 0px 25px #fff;
   color: #000;
   font-size: 3.5rem;
 }
 
-
+.background-tint {
+  text-shadow: 0px 0px 25px #fff;
+}
 .carousel-item p {
-  text-shadow: 0px 0px 10px #fff;
   font-size: 1.5rem;
   font-weight: 500;
   color: #000;
 }
 
 .carousel-item h3 {
-  text-shadow: 0px 0px 15px #fff;
   font-family: 'Montserrat';
-  font-weight: 500;
+  font-weight: 600;
   color: #222;
 }
 
 .carousel-item {
   height:100vh;
+ }
 
+ .carousel-caption {
+   padding-bottom: 15vh;
  }
 
 li {
@@ -92,7 +95,7 @@ li {
 }
 
 main img{
-  max-height: 80vh;
+  max-height: 40vh;
   object-fit: cover;
 }
 
@@ -124,71 +127,52 @@ footer {
 }
 
 /* -----MEDIA Qs-------- */
-/* Extra small devices (portrait phones, less than 576px) */
-/* No media query for `xs` since this is the default in Bootstrap */
 
-/* Small devices (landscape phones, 576px and up) */
-@media (min-width: 576px) {
-
+@media (min-width: 576px){
+  main img {
+    max-height: 65vh;
+  }
 }
 
-/* Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) {
-
-
- }
-
-/* Large devices (desktops, 992px and up) */
-@media (min-width: 992px) {
-
+  main img {
+    max-height: 80vh;
+  }
  }
 
 @media (max-width: 767.9px){
+  .carousel-item h1 {
+  font-size: 1.5em;
+  }
 
- main img {
-   max-height: 65vh;
- }
+  .carousel-item h3 {
+   font-size: 1em;
+  }
 
- h2 {
-   font-size: 1.25rem;
- }
+  .carousel-item p {
+   font-size: 0.8em;
+  }
 
- #mailAddr {
-   font-size: 1rem;
- }
-}
-@media (max-width: 575.9px){
+  .carousel-item img {
+   transform: scale(.6);
+   padding: 0;
+  }
 
-.carousel-item h1 {
-font-size: 2em;
-}
-.carousel-item h3 {
- font-size: 1.25em;
-}
-.carousel-item p {
- font-size: 0.8em;
-}
+  p,
+  li,
+  footer span {
+    font-size: 0.8em;
+  }
 
-.carousel-item img {
- transform: scale(.6);
-}
-.carousel-caption img {
- padding: 0;
-}
+  .service-list {
+   line-height: 1.75em;
+  }
 
-p,
-li,
-footer span {
-  font-size: 0.8em;
-}
+  h2 {
+    font-size: 1.25rem;
+  }
 
-.service-list {
- line-height: 1.75em;
-}
-
-main img {
-  max-height: 40vh;
-}
-
-}
-/* -----  end media Q------ */
+  #mailAddr {
+    font-size: 1rem;
+  }
+} /* -----  end media Q------ */

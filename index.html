@@ -7,43 +7,46 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
       rel="stylesheet">
-      <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,600|Open+Sans|Lato|Libre+Baskerville:400,400i,700|Roboto:300,400&display=swap" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,600|Libre+Baskerville:400,700&display=swap" rel="stylesheet">
       <link rel="stylesheet" href="style.css">
   </head>
 
-  <!-- <body data-spy="scroll" data-target=".navbar" > -->
   <body id="top">
 
     <!-- carousel -->
-    <div id="carouselExampleControls" class="carousel slide carousel-fade" data-ride="carousel">
-      <div class="navCara carousel-inner">
+    <div id="carouselExampleControls" class="carousel slide carousel-fade" data-interval="7500" data-ride="carousel">
+      <div class="carousel-inner">
 
         <div class="tinted-image-1 carousel-item active">
           <div class="carousel-caption">
-           <img class="pb-4" src="royal-logo.png" alt="">
+           <img class="pb-4" src="royal-logo.png" alt="Royal Handyman & Maintenance Services logo">
              <h1 class="">Royal Handyman & Maintenance Services</h1>
              <hr class="my-4">
-             <h3 class="">Hawaii Island's Premier Repair, Maintenance and Improvement Specialists!</h3>
-
-             <!-- <h3 class="d-none d-md-block">Professional * Trusted * Reliable</h3> -->
-             <!-- <p class="">Commercial & Residential repairs and maintenance</p> -->
+             <h3 class=" background-tint">Hawaii Island's Premier Repair, Maintenance and Improvement Specialists!</h3>
           </div>
         </div>
-
-
 
         <div class="tinted-image-2 carousel-item">
-          <!-- <img src="const_pic_2.3.jpg" class=" caraPics d-block w-100" alt="..."> -->
           <div class="carousel-caption d-block">
-            <img class="pb-4" src="royal-logo.png" alt="">
+            <img class="pb-4" src="royal-logo.png" alt="Royal Handyman & Maintenance Services logo">
             <h1 class="">Royal Handyman & Maintenance Services</h1>
             <hr class="my-4">
-            <!-- <p class="">Hawaii Island's Premier Repair, Maintenance and Improvement Specialists!</p> -->
-
-            <!-- <h3 class="">Professional * Trusted * Reliable</h3> -->
-            <h3 class="">Commercial & Residential repairs and maintenance</h3>
+            <h3 class="text-white">Commercial & Residential repairs and maintenance</h3>
+            <hr>
+            <p class="text-white">Professional * Trusted * Reliable</p>
           </div>
         </div>
+
+        <div class="tinted-image-3 carousel-item">
+          <div class="carousel-caption d-block">
+            <img class="pb-4" src="royal-logo.png" alt="Royal Handyman & Maintenance Services logo">
+            <h1 class="">Royal Handyman & Maintenance Services</h1>
+            <hr class="my-4">
+            <a class="btn btn-primary btn-lg" href="#contact" role="button">Contact Us!</a>
+
+          </div>
+        </div>
+
       </div>
 
       <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
@@ -58,7 +61,6 @@
 
     <!-- Nav -->
     <nav id="navbar" class="navbar-expand-md navbar  navbar-light bg-light">
-    <!-- <nav class="navbar  navbar-fixed-left"> -->
 
       <a class="navbar-brand" href="#top">
         <img src="royal-logo.png" width="40" alt=""><span class="d-none d-md-inline-block ml-1">Royal Handyman & Maintenance Services</span></a>
@@ -76,15 +78,12 @@
       </div>
     </nav>
 
-    <!-- ?? Service link <span class="sr-only">(current)</span> -->
-
     <!-- Services -->
     <main class="container pt-3">
 
       <h2 id="services" class="pt-4">Our Services Include:</h2>
       <div class="row service-div">
-        <img class="col-md-6 p-4" src="bathroom_3.jpg" alt="">
-        <!-- <img class="col-md-4 p-4" src="kitchen_2.jpg" alt=""> -->
+        <img class="col-md-6 p-4" src="bathroom_3.jpg" alt="Bathroom photo">
         <div class="myServices col-md-6 ">
           <ul class="service-list">
             <li>Electric</li>
@@ -105,42 +104,40 @@
             <li>...THE LIST IS ENDLESS!!</li>
           </ul>
         </div>
-
       </div>
+
     <!-- Team -->
-      <hr class="">
+      <hr>
       <h2 id="team" class="pt-4">Full Service Handyman & Maintenance Team</h2>
       <div class="row mt-4">
-        <img class="col-md-8 p-4" src="carpenter.jpg" alt="">
-        <!-- <img class="col-md-6 p-4" src="artisan-carpenter.jpg" alt=""> -->
+        <img class="col-md-8 p-4" src="carpenter.jpg" alt="Worker with hammer photo">
         <div class="team col-md-4 p-5 p-md-4">
          <p>Our team of highly trained and experienced trades professionals are here to help, no worries!</p>
          <p>Jobs large and small, we do them all!</p>
         </div>
       </div>
+
     <!-- Contact -->
-      <hr class="">
+      <hr>
       <h2 id="contact" class="pt-4">Contact Us!</h2>
       <div class="row mt-4 mb-4" >
-        <img class="col-md-6 mb-4" src="architect-plans.jpg" alt="">
+        <img class="col-md-6 mb-4" src="architect-plans.jpg" alt="Person drawing floor plan photo">
         <div class="col-md-6">
           <p class="mt-2 mb-5 text-center">Let us help you complete your next project!</p>
 
           <div class="container contact">
-            <a class="call" href="tel:1-808-987-1075">
+            <a href="tel:1-808-987-1075">
               <img class="p-2 pb-3 mail-icon" src="phone.svg" alt="Phone Icon">
             </a>
             <p class="pt-3">call: 808-987-1075</p>
           </div>
-          <hr class=" p-3">
+          <hr class="p-3">
           <div class="container contact">
             <a href="mailto:info@royalislandmaintenance.com?subject=Handyman service inquiry">
               <img class="pt-1 pb-3 mail-icon" src="email2.svg" alt="Email Icon">
             </a>
             <p id="mailAddr">info@RoyalIslandMaintenance.com</p>
-
           </div>
-
 
         </div>
       </div>
