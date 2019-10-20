@@ -1,3 +1,7 @@
+.service-img img{
+  max-height: 40vh;
+}
+
 .tinted-image-1 {
   background-image: url('const_pic_1.jpg');
     background-size: cover;
