@@ -16,7 +16,7 @@ $(document).ready(function(){
     // window scrolling place nav at top, add shadow
     if ($(window).scrollTop() >= 50) {
       nav.classList.add('fixed-top');
-      $(nav).css({'box-shadow': '0px 0px 10px #555'});
+      $(nav).css({'box-shadow': '0px 0px 10px #999'});
     };
 
 // --- window scrolling Add Active Nav Class ---
@@ -38,5 +38,7 @@ $(document).ready(function(){
 const navB = document.querySelector('#navbarSupportedContent ul');
 const navDrop = document.querySelector('#navbarSupportedContent');
 navB.addEventListener('click',function(){
+  if(window.innerWidth < 576){
   navDrop.classList.toggle('show');
+  }
 });
