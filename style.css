@@ -1,3 +1,11 @@
+.house {
+  background: url('white-house.jpg'), url('white-house.jpg');
+  background-blend-mode: multiply;
+  background-size: cover;
+  height: 40vh;
+  margin: 0 15px;
+}
+
 .service-img img{
   max-height: 40vh;
 }
@@ -165,6 +173,16 @@ footer {
 
  }
  @media (max-width: 575.9px){
+   /* adjusting for new photos */
+   .house {
+     max-height: 30vh;
+   }
+
+   .service-img img {
+     max-height: 20vh;
+   }
+/* ------ */
+
    .carousel-caption {
      left: 5%;
      right: 5%;
