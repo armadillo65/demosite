@@ -1,10 +1,26 @@
+
 .house {
-  background: url('white-house.jpg'), url('white-house.jpg');
+  background: url('img/white-house.jpg'), url('img/white-house.jpg');
   background-blend-mode: multiply;
   background-size: cover;
   height: 40vh;
   margin: 0 15px;
 }
+/*
+.kitchen {
+  background: url('img/kitchen-sm.png');
+  background-size: cover;
+  max-height: 40vh;
+  margin: 0 15px;
+  min-width: 50px;
+  min-height: 50px;
+}
+
+.fit {
+
+}
+*/
+
 
 .service-img img{
   max-height: 40vh;
@@ -15,7 +31,7 @@
   linear-gradient(
         rgba(232, 0, 0, 0.1),
         rgba(232, 0, 0, 0.1)),
-        url('const_pic_1.jpg');
+        url('img/const_pic_1.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -26,7 +42,7 @@
   linear-gradient(
         rgba(232, 0, 0, 0.1),
         rgba(232, 0, 0, 0.1)),
-        url('const_pic_2.jpg');
+        url('img/const_pic_2.jpg');
     background-size: cover;
     background-position: right;
     background-repeat: no-repeat;
@@ -36,7 +52,7 @@
   linear-gradient(
         rgba(232, 0, 0, 0.1),
         rgba(232, 0, 0, 0.1)),
-        url('const_pic_3.jpg');
+        url('img/const_pic_3.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -44,7 +60,7 @@
 
 .service-list li::before,
 .team p::before {
-  content: url('hammer.svg');
+  content: url('img/hammer.svg');
   padding: 5px;
   position: absolute;
   top: -5px;
@@ -179,7 +195,7 @@ footer {
    }
 
    .service-img img {
-     max-height: 20vh;
+     max-height: 30vh;
    }
 /* ------ */
 

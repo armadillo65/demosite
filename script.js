@@ -32,6 +32,7 @@ $(document).ready(function(){
   }); // end scrollLink func.
 }); // end window (main) scroll function
 
+
 });//end of JQuery doc ready
 
 // --- Menu collapse after target selected ---
