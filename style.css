@@ -1,63 +1,39 @@
-
-.house {
-  background: url('img/white-house.jpg'), url('img/white-house.jpg');
-  background-blend-mode: multiply;
-  background-size: cover;
-  height: 40vh;
-  margin: 0 15px;
-}
-/*
-.kitchen {
-  background: url('img/kitchen-sm.png');
-  background-size: cover;
-  max-height: 40vh;
-  margin: 0 15px;
-  min-width: 50px;
-  min-height: 50px;
+/* --- Base --- */
+body {
+  font-family: 'Montserrat';
 }
 
-.fit {
-
-}
-*/
-
-
-.service-img img{
-  max-height: 40vh;
+p,
+li {
+  color: #555;
 }
 
-.tinted-image-1 {
-  background-image:
-  linear-gradient(
-        rgba(232, 0, 0, 0.1),
-        rgba(232, 0, 0, 0.1)),
-        url('img/const_pic_1.jpg');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+h1 {
+  font-family: 'Libre Baskerville', serif;
+  font-weight: 700;
+  color: #000;
+  font-size: 3.25rem;
 }
 
-.tinted-image-2{
-  background-image:
-  linear-gradient(
-        rgba(232, 0, 0, 0.1),
-        rgba(232, 0, 0, 0.1)),
-        url('img/const_pic_2.jpg');
-    background-size: cover;
-    background-position: right;
-    background-repeat: no-repeat;
-}
-.tinted-image-3 {
-  background-image:
-  linear-gradient(
-        rgba(232, 0, 0, 0.1),
-        rgba(232, 0, 0, 0.1)),
-        url('img/const_pic_3.jpg');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+nav {
+  background-color: #fff;
+ }
+
+li {
+  list-style: none;
 }
 
+footer {
+  background-color: #000;
+  color: #999;
+  height: 60px;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+
+/* --- Layout --- */
 .service-list li::before,
 .team p::before {
   content: url('img/hammer.svg');
@@ -72,9 +48,17 @@
 .team p {
   position: relative;
 }
+
 .service-list {
   padding-top: 2em;
   line-height: 2.5em;
+}
+
+.team-para {
+  /* margin: auto; */
+}
+.team-para p {
+  text-align: justify;
 }
 
 .contact,
@@ -85,25 +69,9 @@
 .contact p {
   color: #888;
 }
+
 #navbar {
   transition: top 0.8s;
-}
-
-body {
-  font-family: 'Montserrat';
-}
-
-p,
-li {
-  color: #555;
-}
-
-h1 {
-  font-family: 'Libre Baskerville', serif;
-  font-weight: 700;
-  /* text-shadow: 0px 0px 25px #fff; */
-  color: #000;
-  font-size: 3.25rem;
 }
 
 .background-tint-1 {
@@ -134,19 +102,6 @@ h1 {
    padding-bottom: 15vh;
  }
 
- nav {
-   background-color: #fff;
- }
-
-li {
-  list-style: none;
-}
-
-main img{
-  max-height: 60vh;
-  object-fit: cover;
-}
-
 .mail-icon {
   transform: scale(2);
 }
@@ -164,51 +119,98 @@ main img{
   font-size: 20px;
 }
 
-footer {
-  background-color: #000;
-  color: #999;
-  height: 60px;
-  display: flex;
-  text-align: center;
-  align-items: center;
-  justify-content: center;
+/* --- Images --- */
+main img{
+  max-height: 60vh;
+  object-fit: cover;
 }
 
-/* -----MEDIA Qs-------- */
+.service-img img{
+  height: 40vh;
+}
 
-@media (max-width: 400px){
-  main img {
-    max-height: 40vh;
+.house {
+  background: url('img/white-house.jpg'), url('img/white-house.jpg');
+  background-blend-mode: multiply;
+  background-size: cover;
+  height: 40vh;
+  margin: 0 15px;
+}
+
+.tinted-image-1 {
+  background-image:
+  linear-gradient(
+        rgba(232, 0, 0, 0.1),
+        rgba(232, 0, 0, 0.1)),
+        url('img/const_pic_1.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.tinted-image-2{
+  background-image:
+  linear-gradient(
+        rgba(232, 0, 0, 0.1),
+        rgba(232, 0, 0, 0.1)),
+        url('img/const_pic_2.jpg');
+    background-size: cover;
+    background-position: right;
+    background-repeat: no-repeat;
+}
+
+.tinted-image-3 {
+  background-image:
+  linear-gradient(
+        rgba(232, 0, 0, 0.1),
+        rgba(232, 0, 0, 0.1)),
+        url('img/const_pic_3.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/* --- Media Queries --- */
+@media (min-width: 576px) {
+  .team-para p {
+    padding-left: 5%;
+    padding-right: 5%;
   }
-}
+ }
 
 @media (min-width: 992px) {
   main img {
     max-height: 70vh;
   }
-
  }
- @media (max-width: 575.9px){
-   /* adjusting for new photos */
-   .house {
-     max-height: 30vh;
-   }
 
-   .service-img img {
-     max-height: 30vh;
-   }
-/* ------ */
+@media (max-width: 400px){
+  main img {
+    /* max-height: 40vh;  */
+  }
+}
 
-   .carousel-caption {
-     left: 5%;
-     right: 5%;
-     padding-bottom: 5vh;
-   }
-
-   .active {
-     border-bottom: none;
-   }
+@media (max-width: 575.9px){
+ main img {
+   max-height: 40vh;
  }
+
+ .house,
+ .service-img img {
+   height: 30vh;
+ }
+
+ .carousel-caption {
+   left: 5%;
+   right: 5%;
+   padding-bottom: 5vh;
+ }
+
+ .active {
+   border-bottom: none;
+ }
+}
+
 @media (max-width: 767.9px){
   .carousel-item h1 {
   font-size: 1.5em;
@@ -241,7 +243,11 @@ footer {
     font-size: 1.25rem;
   }
 
+  h3 {
+    font-size: 1.15rem;
+  }
+
   #mailAddr {
     font-size: 1rem;
   }
-} /* -----  end media Q------ */
+} /* --- end media queries--- */
